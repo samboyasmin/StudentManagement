@@ -38,7 +38,7 @@ public class StudentLinkedList {
         Node current = head;
 
         while (current.next != null &&
-               current.next.data.gpa <= student.gpa) {
+               current.next.data.gpa >= student.gpa) {
             current = current.next;
         }
 
