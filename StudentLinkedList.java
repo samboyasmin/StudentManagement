@@ -28,13 +28,13 @@ public class StudentLinkedList {
 
         Node newNode = new Node(student);
 
-        if (head == null || student.gpa < head.data.gpa) {
+        if (head == null || student.gpa > head.data.gpa) {
             newNode.next = head;
             head = newNode;
             size++;
             return true;
         }
-
+        
         Node current = head;
 
         while (current.next != null &&
